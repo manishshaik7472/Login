@@ -1,0 +1,969 @@
+.bg{
+  background-image: url("R.jfif");
+  background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;  
+}
+.container{
+margin-top: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: black;
+width: 300px;
+height: 50vh;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.logo{
+    font-size: 50px;
+}
+.h2{
+    font-size: 12px;
+}
+.h4{
+    color:white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size:15px;
+    padding: 5px;
+}
+.container form {
+   padding: 0px 40px;
+    box-sizing: border-box;
+}
+form .text_field{
+position: relative;
+border-bottom: px solid white;
+margin: 30px 0px;
+}
+.text_field input{
+width: 100%;
+padding: 0px 5px;
+height: 20px;
+border: none;
+outline: none;
+background: black;
+color: white;
+}
+.text_field label{
+    position: absolute;
+    top:10%;
+    left: 10px;
+    pointer-events: none;
+    color: white;
+}
+.text_field span::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left : 0;
+    width: 100%;
+    height: 2px;
+    background:white;
+    transition: 2s;
+
+}
+.text_field input:focus ~ label,
+.text_field input:valid ~ label{
+    top: -15px;
+    color: rgb(240, 147, 8);
+}
+.text_field input:focus ~ span::before,
+.text_field input:valid ~ span::before{
+width: 100%;
+}
+.pass{
+    color: white;
+    text-align: end;
+    font-size: 10px;
+    cursor: pointer;
+}
+.pass.pass:hover{
+    color: orange;
+}
+.rem{
+    color: white;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 70px;
+}
+.align{
+    text-align: center;
+}
+.img{
+    height: 80px;
+    width : 80px;
+    border-radius: 90px;
+    margin-right: 30px;
+}
+.btn-i{
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 80px;
+    height: 20px;
+    margin-right: 5px;
+}
+/*@media only screen and (max-height: 1000px)  and (min-width: 375px) and (max-width:800px){
+    .bg  {
+      background-image: url("R.jfif");
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      padding: 10px; 
+          }  
+    .img{
+      height: 70px;
+      width : 70px;
+      border-radius: 90px;
+      margin-top: 60px;
+        }
+    .logo {
+       font-size: 40px;
+       margin-top: 20px;
+    }
+    .container{
+       margin-top: 60px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        background: black;
+        width: 300px;
+        height: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .h4{
+        color:white;
+        font-family: sans-serif;
+        text-align: center;
+        font-size:15px;
+        padding: 15px;
+    }
+    .container form {
+       padding: 0px 40px;
+        box-sizing: border-box;
+    }
+    form .text_field{
+    position: relative;
+    border-bottom: px solid white;
+    margin: 30px 0px;
+    }
+    .text_field input{
+    width: 100%;
+    padding: 0px 5px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    }
+    .text_field label{
+        position: absolute;
+        top:10%;
+        left: 10px;
+        pointer-events: none;
+        color: white;
+    }
+    .text_field span::before{
+        content: '';
+        position: absolute;
+        top: 20px;
+        left : 0;
+        width: 100%;
+        height: 2px;
+        background:white;
+        transition: 2s;
+    
+    }
+    .text_field input:focus ~ label,
+    .text_field input:valid ~ label{
+        top: -15px;
+        color: rgb(240, 147, 8);
+    }
+    .text_field input:focus ~ span::before,
+    .text_field input:valid ~ span::before{
+    width: 100%;
+    }
+    .pass{
+        color: white;
+        text-align: end;
+        font-size: 10px;
+        cursor: pointer;
+        margin-top: 50px;
+    }
+    .pass.pass:hover{
+        color: orange;
+    }
+    .rem{
+        color: white;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    
+    .btn{
+        text-align: center;
+        margin-top: 60px;
+        
+    }
+    .align{
+        text-align: center;
+    }
+    .img{
+        height: 80px;
+        width : 80px;
+        border-radius: 90px;
+        margin-right: 30px;
+    }
+    .btn-i{
+        background-color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 80px;
+        height: 20px;
+        margin-right: 3px;
+        
+    }
+/*@media only screen and (max-height: 1200px)  and (min-width: 801px) and (max-width:1023px){
+        .bg{
+          background-image: url("R.jfif");
+          background-size: cover;
+          height: 100vh;
+          width: 100%;
+          padding: 10px; 
+              }  
+        .img{
+          height: 70px;
+          width : 70px;
+          border-radius: 90px;
+          margin-top: 60px;
+            }
+        .logo{
+           font-size: 40px;
+           margin-top: 20px;
+        }
+        .container{
+           margin-top: 60px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background: black;
+            width: 300px;
+            height: auto;
+            width: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .h4{
+            color:white;
+            font-family: sans-serif;
+            text-align: center;
+            font-size:15px;
+            padding: 15px;
+        }
+        .container form {
+           padding: 0px 40px;
+            box-sizing: border-box;
+        }
+        form .text_field{
+        position: relative;
+        border-bottom: px solid white;
+        margin: 30px 0px;
+        }
+        .text_field input{
+        width: 100%;
+        padding: 0px 5px;
+        height: 20px;
+        border: none;
+        outline: none;
+        background: black;
+        color: white;
+        }
+        .text_field label{
+            position: absolute;
+            top:10%;
+            left: 10px;
+            pointer-events: none;
+            color: white;
+        }
+        .text_field span::before{
+            content: '';
+            position: absolute;
+            top: 20px;
+            left : 0;
+            width: 100%;
+            height: 2px;
+            background:white;
+            transition: 2s;
+        
+        }
+        .text_field input:focus ~ label,
+        .text_field input:valid ~ label{
+            top: -15px;
+            color: rgb(240, 147, 8);
+        }
+        .text_field input:focus ~ span::before,
+        .text_field input:valid ~ span::before{
+        width: 100%;
+        }
+        .pass{
+            color: white;
+            text-align: end;
+            font-size: 10px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+        .pass.pass:hover{
+            color: orange;
+        }
+        .rem{
+            color: white;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+        
+        .btn{
+            text-align: center;
+            margin-top: 60px;
+            
+        }
+        .align{
+            text-align: center;
+        }
+        .img{
+            height: 80px;
+            width : 80px;
+            border-radius: 90px;
+            margin-right: 30px;
+        }
+        .btn-i{
+            background-color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 80px;
+            height: 20px;
+            margin-right: 3px;
+            
+        }}
+
+    }
+    @media only screen and (min-height: 700px)  and (min-width: 320px) and (max-width:374px){
+        .bg{
+          background-image: url("R.jfif");
+          background-size: cover;
+          height: 100vh;
+          width: 100%;
+          padding: 10px; 
+              }  
+        .img{
+          height: 70px;
+          width : 70px;
+          border-radius: 90px;
+          margin-top: 50px;
+            }
+        .logo{
+           font-size: 40px;
+           margin-top: 20px;
+           text-align: center;
+        }
+        .container{
+            margin-left: 6px;
+            margin-top: 60px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background: black;
+            width: 250px;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .h4{
+            color:white;
+            font-family: sans-serif;
+            text-align: center;
+            font-size:15px;
+            padding: 15px;
+        }
+        .container form {
+           padding: 0px 40px;
+            box-sizing: border-box;
+        }
+        form .text_field{
+        position: relative;
+        border-bottom: px solid white;
+        margin: 30px 0px;
+        }
+        .text_field input{
+        width: 100%;
+        padding: 0px 5px;
+        height: 20px;
+        border: none;
+        outline: none;
+        background: black;
+        color: white;
+        }
+        .text_field label{
+            position: absolute;
+            top:10%;
+            left: 10px;
+            pointer-events: none;
+            color: white;
+        }
+        .text_field span::before{
+            content: '';
+            position: absolute;
+            top: 20px;
+            left : 0;
+            width: 100%;
+            height: 2px;
+            background:white;
+            transition: 2s;
+        
+        }
+        .text_field input:focus ~ label,
+        .text_field input:valid ~ label{
+            top: -15px;
+            color: rgb(240, 147, 8);
+        }
+        .text_field input:focus ~ span::before,
+        .text_field input:valid ~ span::before{
+        width: 100%;
+        }
+        .pass{
+            color: white;
+            text-align: end;
+            font-size: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        .pass.pass:hover{
+            color: orange;
+        }
+        .rem{
+            color: white;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+        
+        .btn{
+            text-align: center;
+            margin-top: 60px;
+            
+        }
+        .align{
+            text-align: center;
+        }
+        .img{
+            height: 80px;
+            width : 80px;
+            border-radius: 90px;
+            margin-right: 30px;
+        }
+        .btn-i{
+            background-color: white;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            width: 80px;
+            height: 20px;
+            margin-right: 3px;
+            
+        }
+    
+        }
+@media only screen and (min-height: 700px)  and (min-width: 1024px) and (max-width:1439px){
+            .bg{
+              background-image: url("R.jfif");
+              background-size: cover;
+              height: 100vh;
+              width: 100%;
+              padding: 10px; 
+                  }  
+            .img{
+              height: 70px;
+              width : 70px;
+              border-radius: 90px;
+              margin-top: 60px;
+              margin-left: 10px;
+                }
+            .logo{
+               font-size: 40px;
+               margin-top: 20px;
+               text-align: center;
+            }
+            .container{
+                margin-left: 6px;
+                margin-top: 60px;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                background: black;
+                width: auto ;
+                height: auto;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            .h4{
+                color:white;
+                font-family: sans-serif;
+                text-align: center;
+                font-size:15px;
+                padding: 15px;
+            }
+            .container form {
+               padding: 0px 40px;
+                box-sizing: border-box;
+            }
+            form .text_field{
+            position: relative;
+            border-bottom: px solid white;
+            margin: 30px 0px;
+            }
+            .text_field input{
+            width: 100%;
+            padding: 0px 5px;
+            height: 20px;
+            border: none;
+            outline: none;
+            background: black;
+            color: white;
+            }
+            .text_field label{
+                position: absolute;
+                top:10%;
+                left: 10px;
+                pointer-events: none;
+                color: white;
+            }
+            .text_field span::before{
+                content: '';
+                position: absolute;
+                top: 20px;
+                left : 0;
+                width: 100%;
+                height: 2px;
+                background:white;
+                transition: 2s;
+            
+            }
+            .text_field input:focus ~ label,
+            .text_field input:valid ~ label{
+                top: -15px;
+                color: rgb(240, 147, 8);
+            }
+            .text_field input:focus ~ span::before,
+            .text_field input:valid ~ span::before{
+            width: 100%;
+            }
+            .pass{
+                color: white;
+                text-align: end;
+                font-size: 10px;
+                cursor: pointer;
+                margin-top: 50px;
+            }
+            .pass.pass:hover{
+                color: orange;
+            }
+            .rem{
+                color: white;
+                font-size: 12px;
+                margin-top: 15px;
+            }
+            
+            .btn{
+                text-align: center;
+                margin-top: 60px;
+                
+            }
+            .align{
+                text-align: center;
+            }
+            .img{
+                height: 80px;
+                width : 80px;
+                border-radius: 90px;
+                margin-right: 30px;
+            }
+            .btn-i{
+                background-color: white;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                width: 80px;
+                height: 20px;
+                margin-right: 3px;
+                
+            }
+        
+        }
+@media only screen and (min-height: 700px)  and (min-width: 1440px) and (max-width:2559px){
+                .bg{
+                  background-image: url("R.jfif");
+                  background-size: cover;
+                  height: 100vh;
+                  width: 100%;
+                  padding: 10px; 
+                      }  
+                .img{
+                  height: 70px;
+                  width : 70px;
+                  border-radius: 90px;
+                  margin-top: 60px;
+                  margin-left: 10px;
+                    }
+                .logo{
+                   font-size: 40px;
+                   margin-top: 20px;
+                   text-align: center;
+                }
+                .container{
+                    margin-left: 6px;
+                    margin-top: 60px;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    background: black;
+                    width: auto ;
+                    height: auto;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                }
+                .h4{
+                    color:white;
+                    font-family: sans-serif;
+                    text-align: center;
+                    font-size:15px;
+                    padding: 15px;
+                }
+                .container form {
+                   padding: 0px 40px;
+                    box-sizing: border-box;
+                }
+                form .text_field{
+                position: relative;
+                border-bottom: px solid white;
+                margin: 30px 0px;
+                }
+                .text_field input{
+                width: 100%;
+                padding: 0px 5px;
+                height: 20px;
+                border: none;
+                outline: none;
+                background: black;
+                color: white;
+                }
+                .text_field label{
+                    position: absolute;
+                    top:10%;
+                    left: 10px;
+                    pointer-events: none;
+                    color: white;
+                }
+                .text_field span::before{
+                    content: '';
+                    position: absolute;
+                    top: 20px;
+                    left : 0;
+                    width: 100%;
+                    height: 2px;
+                    background:white;
+                    transition: 2s;
+                
+                }
+                .text_field input:focus ~ label,
+                .text_field input:valid ~ label{
+                    top: -15px;
+                    color: rgb(240, 147, 8);
+                }
+                .text_field input:focus ~ span::before,
+                .text_field input:valid ~ span::before{
+                width: 100%;
+                }
+                .pass{
+                    color: white;
+                    text-align: end;
+                    font-size: 10px;
+                    cursor: pointer;
+                    margin-top: 50px;
+                }
+                .pass.pass:hover{
+                    color: orange;
+                }
+                .rem{
+                    color: white;
+                    font-size: 12px;
+                    margin-top: 15px;
+                }
+                
+                .btn{
+                    text-align: center;
+                    margin-top: 60px;
+                    
+                }
+                .align{
+                    text-align: center;
+                }
+                .img{
+                    height: 80px;
+                    width : 80px;
+                    border-radius: 90px;
+                    margin-right: 30px;
+                }
+                .btn-i{
+                    background-color: white;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    width: 80px;
+                    height: 20px;
+                    margin-right: 3px;
+                    
+                }
+
+                }
+@media only screen and  (min-width: 2560px){
+                    .bg{
+                      background-image: url("R.jfif");
+                      background-size: cover;
+                      height: 100vh;
+                      width: 100%;
+                      padding: 10px; 
+                          }  
+                    .img{
+                      height: 70px;
+                      width : 70px;
+                      border-radius: 90px;
+                      margin-top: 60px;
+                      margin-left: 10px;
+                        }
+                    .logo{
+                       font-size: 40px;
+                       margin-top: 20px;
+                       text-align: center;
+                    }
+                    .container{
+                        margin-left: 6px;
+                        margin-top: 60px;
+                        position: absolute;
+                        transform: translate(-50%, -50%);
+                        background: black;
+                        width: auto ;
+                        height: auto;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    }
+                    .h4{
+                        color:white;
+                        font-family: sans-serif;
+                        text-align: center;
+                        font-size:15px;
+                        padding: 15px;
+                    }
+                    .container form {
+                       padding: 0px 40px;
+                        box-sizing: border-box;
+                    }
+                    form .text_field{
+                    position: relative;
+                    border-bottom: px solid white;
+                    margin: 30px 0px;
+                    }
+                    .text_field input{
+                    width: 100%;
+                    padding: 0px 5px;
+                    height: 20px;
+                    border: none;
+                    outline: none;
+                    background: black;
+                    color: white;
+                    }
+                    .text_field label{
+                        position: absolute;
+                        top:10%;
+                        left: 10px;
+                        pointer-events: none;
+                        color: white;
+                    }
+                    .text_field span::before{
+                        content: '';
+                        position: absolute;
+                        top: 20px;
+                        left : 0;
+                        width: 100%;
+                        height: 2px;
+                        background:white;
+                        transition: 2s;
+                    
+                    }
+                    .text_field input:focus ~ label,
+                    .text_field input:valid ~ label{
+                        top: -15px;
+                        color: rgb(240, 147, 8);
+                    }
+                    .text_field input:focus ~ span::before,
+                    .text_field input:valid ~ span::before{
+                    width: 100%;
+                    }
+                    .pass{
+                        color: white;
+                        text-align: end;
+                        font-size: 10px;
+                        cursor: pointer;
+                        margin-top: 50px;
+                    }
+                    .pass.pass:hover{
+                        color: orange;
+                    }
+                    .rem{
+                        color: white;
+                        font-size: 12px;
+                        margin-top: 15px;
+                    }
+                    
+                    .btn{
+                        text-align: center;
+                        margin-top: 60px;
+                        
+                    }
+                    .align{
+                        text-align: center;
+                    }
+                    .img{
+                        height: 80px;
+                        width : 80px;
+                        border-radius: 90px;
+                        margin-right: 30px;
+                    }
+                    .btn-i{
+                        background-color: white;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        width: 80px;
+                        height: 20px;
+                        margin-right: 3px;
+                        
+                    }
+                
+                    }
+ @media only screen and (max-height: 1000px)  and (min-width: 250px) and (max-width:800px){
+                        .bg{
+                          background-image: url("R.jfif");
+                          background-size: cover;
+                          height: 100vh;
+                          width: 100%;
+                          padding: 10px; 
+                              }  
+                        .img{
+                          height: 70px;
+                          width : 70px;
+                          border-radius: 90px;
+                          margin-top:50px;
+                            }
+                        .logo{
+                           font-size: 40px;
+                           margin-top: 20px;
+                        }
+                        .container{
+                           margin-top: 70px;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                            background: black;
+                            width: 300px;
+                            height: auto;
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                            width: 250px;
+                        }
+                        .h4{
+                            color:white;
+                            font-family: sans-serif;
+                            text-align: center;
+                            font-size:15px;
+                            padding: 15px;
+                        }
+                        .container form {
+                           padding: 0px 40px;
+                            box-sizing: border-box;
+                        }
+                        form .text_field{
+                        position: relative;
+                        border-bottom: px solid white;
+                        margin: 30px 0px;
+                        }
+                        .text_field input{
+                        width: 100%;
+                        padding: 0px 5px;
+                        height: 20px;
+                        border: none;
+                        outline: none;
+                        background: black;
+                        color: white;
+                        }
+                        .text_field label{
+                            position: absolute;
+                            top:10%;
+                            left: 10px;
+                            pointer-events: none;
+                            color: white;
+                        }
+                        .text_field span::before{
+                            content: '';
+                            position: absolute;
+                            top: 20px;
+                            left : 0;
+                            width: 100%;
+                            height: 2px;
+                            background:white;
+                            transition: 2s;
+                        
+                        }
+                        .text_field input:focus ~ label,
+                        .text_field input:valid ~ label{
+                            top: -15px;
+                            color: rgb(240, 147, 8);
+                        }
+                        .text_field input:focus ~ span::before,
+                        .text_field input:valid ~ span::before{
+                        width: 100%;
+                        }
+                        .pass{
+                            color: white;
+                            text-align: end;
+                            font-size: 10px;
+                            cursor: pointer;
+                            margin-top: 50px;
+                        }
+                        .pass.pass:hover{
+                            color: orange;
+                        }
+                        .rem{
+                            color: white;
+                            font-size: 12px;
+                            margin-top: 15px;
+                        }
+                        
+                        .btn{
+                            text-align: center;
+                            margin-top: 60px;
+                            
+                        }
+                        .align{
+                            text-align: center;
+                        }
+                        .img{
+                            height: 80px;
+                            width : 80px;
+                            border-radius: 90px;
+                            margin-right: 30px;
+                        }
+                        .btn-i{
+                            background-color: white;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            width: 80px;
+                            height: 20px;
+                            margin-right: 3px;
+                            
+                        }}
